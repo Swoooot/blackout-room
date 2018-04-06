@@ -37,7 +37,7 @@
             }
             if(pageOptionalClass) {
                 document.documentElement.classList.toggle(pageOptionalClass);
-                document.body.classList.toggle(pageOptionalClass);
+                document.body.classList.toggle('opened__menu--body');
             }
 
             let isCollpased = elem.getAttribute('data-collapsed') === 'true';
