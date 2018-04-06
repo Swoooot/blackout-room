@@ -48,7 +48,7 @@ gulp.task('copy', function() {
     return del('build');
   })
   
-  gulp.task('build', function(done) {
+  gulp.task('finish', function(done) {
     run('clean', 'copy', 'style', 'html', done);
   })
   
