@@ -201,14 +201,6 @@
     top: 50%;
     transform: translateY(-50%); } }
 
-@keyframes bgZoom {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.4); }
-  100% {
-    transform: scale(1); } }
-
 .navigation__list {
   display: flex;
   margin: 0;
