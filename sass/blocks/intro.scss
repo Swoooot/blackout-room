@@ -21,7 +21,7 @@
 	width: 100%;
 	height: 100%;
 	background:url("../img/main@1x.jpg") no-repeat center center;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (orientation: landscape) {
         background:url("../img/main@2x.jpg") no-repeat center center;
         background-size: cover;
 	}
