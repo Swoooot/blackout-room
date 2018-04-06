@@ -47,10 +47,12 @@
       background-size: cover; } }
   @media (max-width: 768px) {
     .intro__background__pic {
-      background-position-x: right; } }
+      background-position-x: right;
+      background-size: cover; } }
   @media (max-width: 580px) {
     .intro__background__pic {
-      background-position-x: 20%; } }
+      background-position-x: 20%;
+      background-size: cover; } }
 
 .intro__wrapper {
   display: flex;
@@ -200,6 +202,14 @@
     margin-top: 0;
     top: 50%;
     transform: translateY(-50%); } }
+
+@keyframes bgZoom {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
 
 .navigation__list {
   display: flex;
