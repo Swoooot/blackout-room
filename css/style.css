@@ -271,9 +271,6 @@ body {
 h2 {
   font-family: "umbra", "Charcoal", sans-serif; }
 
-.opened__menu {
-  overflow: hidden; }
-
 .opened__menu--body {
   position: fixed; }
 
