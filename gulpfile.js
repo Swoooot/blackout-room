@@ -3,6 +3,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
+var rename = require('rename');
+var run = require('run-sequence');
+var del = require('del');
 var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['style'], function() {
@@ -12,7 +15,13 @@ gulp.task('serve', ['style'], function() {
     });
 
     gulp.watch("sass/**/*.scss", ['style']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch('*.html', ['html']);
+});
+
+gulp.task('html', function() {
+    return gulp.src('*.html')
+    .pipe(gulp.dest('build'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('style', function() {
@@ -22,4 +31,25 @@ gulp.task('style', function() {
       .pipe(gulp.dest('css'))
       .pipe(browserSync.stream());
 });
+
+gulp.task('copy', function() {
+    return gulp.src([
+      'fonts/**/*.{woff,woff2}',
+      'img/**/*.{jpg,webp,svg}',
+      'js/**',
+      'css/**'
+    ], {
+      base: '.'
+    })
+    .pipe(gulp.dest('build'));
+  });
+
+  gulp.task('clean', function() {
+    return del('build');
+  })
+  
+  gulp.task('build', function(done) {
+    run('clean', 'copy', 'style', 'html', done);
+  })
+  
 
