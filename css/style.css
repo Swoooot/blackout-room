@@ -238,6 +238,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    overflow-y: scroll;
     min-width: 320px;
     height: 0;
     overflow: hidden;
@@ -272,7 +273,8 @@ h2 {
   font-family: "umbra", "Charcoal", sans-serif; }
 
 .opened__menu--body {
-  position: fixed; }
+  position: fixed;
+  overflow: hidden; }
 
 .container {
   box-sizing: border-box;

@@ -14,6 +14,6 @@ Array.prototype.forEach.call(questions, function(item, i) {
 
 let mainTitle = document.querySelector(".intro__title");
 
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = function() {
     mainTitle.classList.add("intro__title--loaded");
-})
+};
