@@ -1,0 +1,52 @@
+.price {
+    background-color: $background;
+    text-align: center;
+}
+
+.price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price__heading {
+    margin: 0;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.price__title {
+    font-family: $secondary-text;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.price__additional {
+    font-family: $secondary-text;
+    font-size: 18px;
+    line-height: 20px;
+    color: $main-color;
+}
+
+.price__item {
+    position: relative;
+    width: 33%;
+    padding-top: 100px;
+    color: #ffffff; 
+}
+
+.price__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url
+}
+
+.price__content {
+    font-family: $main-text;
+    font-size: 21px;
+    line-height: 29px;
+}

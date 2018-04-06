@@ -1,0 +1,69 @@
+.stats {
+    padding: 30px 0;
+    color: #2b2e34;
+}
+
+.stats__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.stats__item {
+    position: relative;
+    width: 23%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: 25px 25px;
+    }
+
+    &--rooms::after {
+        background-image:url("../img/shiny-diamond.svg");
+    }
+
+    &--locks::after {
+        background-image:url("../img/lock.svg");
+    }
+
+    &--joueurs::after {
+        background-image:url("../img/user-network.svg");
+    }
+
+    &--minutes::after {
+        background-image:url("../img/sand-clock.svg");
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.stats__number {
+    margin: 0;
+    font-family: $title-text;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.stats__title {
+    font-family: $secondary-text;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+    color: #999999;
+    text-transform: uppercase;
+}

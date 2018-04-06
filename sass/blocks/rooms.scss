@@ -1,0 +1,156 @@
+.rooms {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $background;
+    text-align: center;
+}
+
+.rooms__slider{
+    width: 100%;
+}
+
+.rooms__slider-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.rooms__item {
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.rooms__title {
+    margin: 0;
+    font-family: "umbra", "serif";
+    font-size: 38px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.rooms__title-additional {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: $secondary-text;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #b89a51;
+} 
+
+.rooms__description-title {
+    font-family: $secondary-text;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #b89a51;
+}
+
+.rooms__description p {
+    font-family: $main-text;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+}
+
+.rooms__image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rooms__image img {
+    display: block;
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+}
+
+.rooms__image:hover img {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.rooms__image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -62%;
+    width: 200%;
+    height: 150%;
+    background-color: rgba(255,255,255,0.3);
+    transition: all 0.5s ease;
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+.rooms__image:hover::after {
+    left: -300%;
+    top: 200%;
+}
+
+.rooms__additional-info {
+    font-size: 0;
+}
+
+.rooms__additional-info p {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
+    margin-right: 10px;
+    font-family: $secondary-text;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rooms__additional-info p::after {
+    content:"";
+    position: absolute;
+    top:2px;
+    left:0;
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+}
+
+.rooms__participants::after {
+    background:url("../img/user.svg") no-repeat center center;
+}
+
+.rooms__time::after {
+    background:url("../img/stopwatch.svg") no-repeat center center;
+}
+
+.rooms__difficulty::after {
+    background:url("../img/keyhole.svg") no-repeat center center;
+}
+
+.rooms__additional-info {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -45%);
+    transition: opacity 0.2s linear;
+    z-index: 10;
+    text-align: center;
+}
+
+.rooms__image:hover .rooms__additional-info {
+    opacity: 1;
+}
+
+.rooms__action-call {
+    font-family: $main-text;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
