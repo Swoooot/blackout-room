@@ -54,6 +54,16 @@
     .intro__background__pic {
       background-position-x: 20%;
       background-size: cover; } }
+  @media (orientation: landscape) {
+    .intro__background__pic {
+      width: 100%;
+      height: 100%;
+      background-size: cover; } }
+  @media (orientation: portrait) {
+    .intro__background__pic {
+      width: 100%;
+      height: 100%;
+      background-size: cover; } }
 
 .intro__wrapper {
   display: flex;
