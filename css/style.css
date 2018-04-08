@@ -250,8 +250,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 0;
-    width: 100%;
+    bottom: 0;
+    right: 0;
     overflow-y: auto;
     min-width: 320px;
     display: none;
