@@ -8,6 +8,7 @@ body {
 body {
     min-height: 100vh;
     background-color: black;
+    width: 100%;
     min-width: 320px;
 }
 
@@ -21,7 +22,5 @@ h2 {
 
 .opened__menu--body {
     position: fixed;
-    width: 100%;
-
 }
 

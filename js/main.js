@@ -1,9 +1,9 @@
 'use strict';
 
-// let menuSwitch = document.querySelector('.intro__switch');
-// let menu = document.querySelector('.navigation');
+let menuSwitch = document.querySelector('.intro__switch');
+let menu = document.querySelector('.navigation');
 
-// makeCollapsable(menuSwitch, menu, null, "opened__menu");
+makeCollapsable(menuSwitch, menu, null, "opened__menu");
 
 // let questions = document.querySelectorAll('.faq__question');
 // let answers = document.querySelectorAll('.faq__answer');
