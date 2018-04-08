@@ -23,10 +23,10 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   box-sizing: border-box;
   font-size: 14px;
-  font-family: "leaguespartan", sans-serif;
-  overflow: hidden; }
+  font-family: "leaguespartan", sans-serif; }
 
 .intro__background {
   min-width: 320px;
