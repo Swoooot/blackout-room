@@ -17,6 +17,7 @@
 	bottom:0;
 	right: 0;
 	z-index: -1;
+	font-size: 0;
 }
 
 .intro__background::before {
@@ -24,6 +25,8 @@
 	position: absolute;
 	top:0;
 	left:0;
+	bottom:0;
+	right: 0;
 	z-index: -1;
 	background:url("../img/main@1x.jpg") no-repeat center center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -154,6 +157,14 @@
 
 	@media(max-width: 580px) {
 		font-size:32px;
+	}
+
+	@media(min-width: 1200px) {
+		font-size: 64px;
+	}
+	@media(min-width: 1600px) {
+		margin-top: 40px;
+		font-size: 72px;
 	}
 }
 
