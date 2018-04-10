@@ -4,8 +4,8 @@
 	height: 100vh;
 	min-height: 500px;
     box-sizing: border-box;
-    font-size: 14px;
-	font-family: "leaguespartan", sans-serif;
+	font-size: 14px;
+	font-family: $main-text
 }
 
 .intro__background {
@@ -39,24 +39,20 @@
 	
 	@media (max-width: 768px) {
 		background-position-x: right;
-		background-size: cover;
 	}
 
 	@media (max-width: 580px) {
 		background-position-x: 20%;
-		background-size: cover;
 	}
 
 	@media(orientation: landscape) {
 		width: 100%;
 		height: 100%;
-		background-size: cover;
 	}
 
 	@media(orientation: portrait) {
 		width: 100%;
 		height: 100%;
-		background-size: cover;
 	}
 
 	animation: bgZoom 50s linear;
@@ -160,6 +156,7 @@
 	}
 
 	@media(min-width: 1200px) {
+
 		font-size: 64px;
 	}
 	@media(min-width: 1600px) {
