@@ -35,7 +35,7 @@ gulp.task('style', function() {
 gulp.task('copy', function() {
     return gulp.src([
       'fonts/**/*.{woff,woff2}',
-      'img/**/*.{jpg,webp,svg}',
+      'img/**/*.{jpg,webp,svg,png}',
       'js/**',
       'css/**'
     ], {
