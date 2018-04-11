@@ -208,16 +208,16 @@
 
 .rooms__about {
     position: relative;
-    top: 400%;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -100%;
+    width: 80%;
     overflow-y: auto;
-    transition: top 0.4s linear;
+    transition: margin-top 0.6s ease-in-out;
 }
 
 .rooms__item:hover .rooms__about {
-    top: 15%;
+    margin-top: 15%;
 }
 
 @media(max-width: 1040px) {
