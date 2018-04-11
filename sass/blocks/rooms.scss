@@ -253,6 +253,7 @@
     }
 
     .rooms__item-info {
+        display: flex;
         position: relative;
         width: 100%;
         height: 100%;
@@ -278,6 +279,11 @@
         display: none;
     }
 
+    .rooms__item-info h3 {
+        margin: 0;
+        align-self: center;
+    }
+
     .rooms__item-info h3::after {
         display: none;
     }
@@ -294,6 +300,10 @@
         background-color: transparent;
         box-shadow: none;
         z-index: 9999;
+    }
+
+    .rooms__reserve:hover {
+        transform: none;
     }
 
     .rooms__reserve:active {
