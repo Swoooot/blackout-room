@@ -392,7 +392,8 @@ h2 {
 .rooms__item-info {
   box-sizing: border-box;
   width: 50%;
-  padding: 30px 40px;
+  padding: 20px 30px;
+  padding-bottom: 10px;
   text-align: left; }
 
 .rooms__item-preview {
@@ -423,12 +424,12 @@ h2 {
   z-index: 3; }
 
 .rooms__item-info h3 {
-  max-width: 200px;
+  max-width: 150px;
   margin-top: 0;
   margin-bottom: 15px;
   font-family: "codePro", "Geneva", "sans-serif";
   font-weight: bold;
-  font-size: 28px; }
+  font-size: 24px; }
   .rooms__item-info h3::after {
     content: "";
     margin-top: 10px;
@@ -442,10 +443,10 @@ h2 {
 
 .rooms__stats {
   position: relative;
-  top: 50%;
+  margin-bottom: 20px;
   font-family: "codePro", "Geneva", "sans-serif";
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   transition: top 0.1s ease-in-out; }
 
 .rooms__stats > * {
@@ -454,23 +455,23 @@ h2 {
   vertical-align: top;
   margin: 0;
   margin-right: 15px;
-  padding-left: 35px; }
+  padding-left: 30px; }
 
 .rooms__stats > *::before {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -10px;
   left: 0;
   width: 25px;
   height: 35px; }
 
 .rooms__people::before {
   background: url("../img/person_icon.svg") no-repeat center center;
-  background-size: 34px 37px; }
+  background-size: 32px 34px; }
 
 .rooms__time::before {
   background: url("../img/sand-clock1.svg") no-repeat center center;
-  background-size: 34px 27px; }
+  background-size: 32px 20px; }
 
 .rooms__stats > *:last-child {
   margin-right: 0; }
@@ -495,15 +496,12 @@ h2 {
 
 .rooms__about {
   position: relative;
-  top: 200%;
+  top: 400%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   overflow-y: auto;
   transition: top 0.4s linear; }
-
-.rooms__item:hover .rooms__stats {
-  top: 15%; }
 
 .rooms__item:hover .rooms__about {
   top: 15%; }
@@ -521,7 +519,7 @@ h2 {
     margin-bottom: 40px; }
   .rooms__item-info h3 {
     max-width: 130px;
-    font-size: 24px; } }
+    font-size: 28px; } }
 
 @media (max-width: 568px) {
   .rooms__item {
@@ -529,6 +527,7 @@ h2 {
     display: block; }
   .rooms__item-info {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 100%;
@@ -547,8 +546,10 @@ h2 {
   .rooms__item-preview > * {
     display: none; }
   .rooms__item-info h3 {
+    width: 100%;
+    max-width: 100%;
     margin: 0;
-    align-self: center; }
+    margin-bottom: 5px; }
   .rooms__item-info h3::after {
     display: none; }
   .rooms__reserve {
@@ -566,7 +567,9 @@ h2 {
   .rooms__reserve:hover {
     transform: none; }
   .rooms__reserve:active {
-    background-color: rgba(65, 38, 199, 0.6); } }
+    background-color: rgba(65, 38, 199, 0.6); }
+  .rooms__stats {
+    margin-bottom: 0; } }
 
 @media (max-width: 400px) {
   .rooms__item-info h3 {
