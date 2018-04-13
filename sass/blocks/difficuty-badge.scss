@@ -1,0 +1,42 @@
+.difficulty::after {
+    content:"";
+    width: 150px;
+    padding-top: 30px;
+    padding-bottom: 10px; 
+    top: -9px;
+    right: -54px;
+    position: absolute;
+    color: #000000;
+    font-size: 14px;
+    font-family: $main-text;
+    font-weight: bold;
+    z-index: 10;
+    transform: rotate(45deg);
+    opacity: 0.8;
+}
+
+.difficulty--hard::after {
+    content:"HARD";
+    background-color: red;
+    color: #ffffff;
+}
+
+.difficulty--medium::after {
+    content:"MEDIUM";
+    background-color: yellow;
+    color: black;
+}
+
+.difficulty--easy::after {
+    content:"EASY";
+    background-color: lightgreen;
+}
+
+@media(max-width: 400px) {
+    .difficulty::after {
+        padding-bottom: 5px;
+        font-size: 10px;
+        top: -10px;
+        right: -62px;
+    }
+}

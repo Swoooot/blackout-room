@@ -360,6 +360,7 @@ h2 {
   margin-bottom: 5px;
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 18px;
+  font-weight: bold;
   line-height: 20px;
   color: #5335e3; }
   @media (max-width: 375px) {
@@ -381,6 +382,7 @@ h2 {
   color: #ffffff; }
 
 .rooms__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 45%;
@@ -916,3 +918,40 @@ h2 {
     font-size: 16px; }
   .steps__text {
     font-size: 14px; } }
+
+.difficulty::after {
+  content: "";
+  width: 150px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  top: -9px;
+  right: -54px;
+  position: absolute;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(45deg);
+  opacity: 0.8; }
+
+.difficulty--hard::after {
+  content: "HARD";
+  background-color: red;
+  color: #ffffff; }
+
+.difficulty--medium::after {
+  content: "MEDIUM";
+  background-color: yellow;
+  color: black; }
+
+.difficulty--easy::after {
+  content: "EASY";
+  background-color: lightgreen; }
+
+@media (max-width: 400px) {
+  .difficulty::after {
+    padding-bottom: 5px;
+    font-size: 10px;
+    top: -10px;
+    right: -62px; } }

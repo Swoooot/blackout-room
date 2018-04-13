@@ -47,6 +47,7 @@
     margin-bottom: 5px;
     font-family: $main-text;
     font-size: 18px;
+    font-weight: bold;
     line-height: 20px;
     color: #5335e3;
 
@@ -72,6 +73,7 @@
 }
 
 .rooms__item {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 45%;
