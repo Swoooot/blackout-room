@@ -387,7 +387,11 @@ h2 {
   min-height: 100px;
   border-radius: 10px;
   background-color: #5335e3;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: transform 0.1s linear; }
+
+.rooms__item:hover {
+  transform: scale(1.05); }
 
 .rooms__item-info {
   box-sizing: border-box;
@@ -420,7 +424,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(65, 38, 199, 0.3);
+  background: linear-gradient(to right, rgba(65, 38, 199, 0.4), rgba(115, 89, 245, 0.4));
   z-index: 3; }
 
 .rooms__item-info h3 {
@@ -495,13 +499,15 @@ h2 {
   transform: scale(1.1); }
 
 .rooms__about {
+  width: 80%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: -100%;
-  width: 80%;
   overflow-y: auto;
-  transition: margin-top 0.6s ease-in-out; }
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 14px;
+  transition: margin-top 0.3s ease-in-out; }
 
 .rooms__item:hover .rooms__about {
   margin-top: 15%; }
@@ -509,14 +515,13 @@ h2 {
 @media (max-width: 1040px) {
   .rooms__item {
     width: 80%;
-    margin-bottom: 40px; }
+    margin-bottom: 25px; }
   .rooms__item-info h3 {
     font-size: 34px; } }
 
 @media (max-width: 768px) {
   .rooms__item {
-    width: 100%;
-    margin-bottom: 40px; }
+    width: 100%; }
   .rooms__item-info h3 {
     max-width: 130px;
     font-size: 28px; } }
@@ -528,6 +533,7 @@ h2 {
   .rooms__item-info {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     position: relative;
     width: 100%;
     height: 100%;
@@ -771,49 +777,139 @@ h2 {
   transition: height 0.2s linear; }
 
 .price {
-  background-color: #2b2e34;
-  text-align: center; }
-
-.price__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.price__heading {
-  margin: 0;
-  font-size: 38px;
-  color: #ffffff; }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #351fa0; }
 
 .price__title {
-  font-family: "leaguespartan", "Helvetica", sans-serif;
-  font-size: 18px;
-  line-height: 20px; }
+  position: relative;
+  margin-left: 90px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border-left: 4px solid black; }
 
-.price__additional {
-  font-family: "leaguespartan", "Helvetica", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  color: #b89a51; }
+.price__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -90px;
+  width: 65px;
+  height: 65px;
+  background: url("../img/euro_symbol.svg") no-repeat center center;
+  background-size: 65px 65px;
+  transform: translateY(-50%); }
+
+.price__title h2 {
+  margin: 0;
+  font-family: "codePro", "Geneva", "sans-serif";
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #ffffff; }
+  @media (max-width: 375px) {
+    .price__title h2 {
+      font-size: 28px; } }
+
+.price__small {
+  margin: 0;
+  max-width: 480px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold; }
+  @media (max-width: 375px) {
+    .price__small {
+      font-size: 14px; } }
+
+.price__list {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto; }
 
 .price__item {
   position: relative;
   width: 33%;
-  padding-top: 100px;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  text-align: center; }
+  .price__item--3 {
+    background-color: #384054; }
+  .price__item--4 {
+    background-color: #353d51; }
+  .price__item--5 {
+    background-color: #33394c; }
+  .price__item:first-child {
+    border-radius: 10px 0px 0px 10px; }
+  .price__item:last-child {
+    border-radius: 0px 10px 10px 0px; }
+
+.price__item > * {
+  margin-bottom: 10px; }
+
+.price__persones {
+  margin: 0;
+  font-family: "codePro", "Geneva", "sans-serif";
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; }
+
+.price__number {
+  margin: 0;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d8ce5b; }
+  .price__item--4 .price__number {
+    color: #a1f55d; }
+  .price__item--5 .price__number {
+    color: #08c596; }
+
+.price__tip {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
   color: #ffffff; }
 
 .price__item::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: url; }
+  top: 20px;
+  left: 50%;
+  height: 50px;
+  transform: translateX(-50%);
+  background-size: 50px 50px;
+  background-repeat: no-repeat; }
 
-.price__content {
-  font-family: "Arial", Helvetica, sans-serif;
-  font-size: 21px;
-  line-height: 29px; }
+.price__item--3::before {
+  width: 70px;
+  background-image: url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg");
+  background-position-x: -10px, 10px, 30px; }
+
+.price__item--4::before {
+  width: 90px;
+  background-image: url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg");
+  background-position-x: -10px, 10px, 30px, 50px; }
+
+.price__item--5::before {
+  width: 110px;
+  background-image: url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg"), url("../img/person_icon.svg");
+  background-position-x: -10px, 10px, 30px, 50px, 70px; }
+
+@media (max-width: 768px) {
+  .price__persones {
+    font-size: 18px; }
+  .price__number {
+    font-size: 18px; } }
+
+@media (max-width: 568px) {
+  .price__list {
+    flex-direction: column;
+    align-items: center; }
+  .price__item {
+    width: 80%;
+    max-width: 300px; }
+  .price__item:first-child {
+    border-radius: 10px 10px 0px 0px; }
+  .price__item:last-child {
+    border-radius: 0px 0px 10px 10px; } }
 
 .partners img {
   width: 200px; }
