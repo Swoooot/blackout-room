@@ -163,7 +163,7 @@
       font-size: 72px; } }
 
 .loaded .intro__title {
-  animation: slideIn 0.8s ease-in-out;
+  animation: slideIn 0.7s ease-in-out;
   filter: blur(0px); }
 
 .intro__title span {
@@ -350,7 +350,7 @@ h2 {
   left: 0;
   width: 53px;
   height: 55px;
-  background: url("../img/keys_logo.png") no-repeat center center;
+  background: url("../img/keys_logo.svg") no-repeat center center;
   background-size: cover; }
 
 .rooms__title-additional {
@@ -887,9 +887,27 @@ h2 {
   top: 0;
   left: 0;
   width: 70px;
-  height: 70px;
-  background: url("../img/logo_time.svg") no-repeat center center;
-  background-size: 70px 70px; }
+  height: 70px; }
+
+.steps__item--lock::before {
+  background: #000000 url("../img/logo_lock.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.steps__item--time::before {
+  background: #000000 url("../img/logo_time.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.steps__item--person::before {
+  background: #000000 url("../img/logo_person.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.steps__list {
+  position: relative; }
+
+.steps__line {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .steps__subtitle {
   margin-bottom: 10px;

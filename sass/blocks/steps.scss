@@ -33,9 +33,31 @@
     left: 0;
     width:70px;
     height: 70px;
-    background: url("../img/logo_time.svg") no-repeat center center;
-    background-size: 70px 70px;
+}
 
+.steps__item--lock::before {
+    background: #000000 url("../img/logo_lock.svg") no-repeat center center;
+    background-size: 98px 98px;
+}
+
+.steps__item--time::before {
+    background: #000000 url("../img/logo_time.svg") no-repeat center center;
+    background-size: 98px 98px;
+}
+
+.steps__item--person::before {
+    background: #000000 url("../img/logo_person.svg") no-repeat center center;
+    background-size: 98px 98px;
+}
+
+.steps__list {
+    position: relative;
+}
+
+.steps__line {
+    position: absolute;
+    top:0;
+    left: 0;
 }
 
 .steps__subtitle {
