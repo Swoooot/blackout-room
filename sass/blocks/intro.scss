@@ -148,10 +148,9 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #ffffff;
-	text-align: center;
-	transform: scale(1.2);
+	margin: 0 auto;
 	filter: blur(90px);
-	transition: all 1.0s ease-in-out;
+	transition: filter 1.0s ease-in-out;
 
 	@media(max-width: 580px) {
 		font-size:32px;
@@ -168,7 +167,6 @@
 }
 
 .intro__title--loaded {
-	transform: scale(1);
 	filter: blur(0px);
 }
 
