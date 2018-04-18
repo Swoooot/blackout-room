@@ -96,4 +96,13 @@
     .steps__text {
         font-size: 14px;
     }
+
+    .steps__title::after {
+        content: "";
+        display: block;
+        margin-top: 5px;
+        width: 100px;
+        height: 3px;
+        background-color: #4a2be4;
+    }
 }
