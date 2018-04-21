@@ -914,32 +914,80 @@ h2 {
     margin-left: 5%;
     margin-right: 5%; }
   .partners__content {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-animation: slide 10s ease-in-out;
     animation: slide 10s ease-in-out;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite; } }
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  11% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  22% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  33% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  44% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%); }
+  55% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%); }
+  66% {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%); }
+  77% {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%); }
+  88% {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%); }
+  100% {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%); } }
 
 @keyframes slide {
   0% {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%); }
   11% {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%); }
   22% {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%); }
   33% {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%); }
   44% {
+    -webkit-transform: translateX(-200%);
     transform: translateX(-200%); }
   55% {
+    -webkit-transform: translateX(-200%);
     transform: translateX(-200%); }
   66% {
+    -webkit-transform: translateX(-300%);
     transform: translateX(-300%); }
   77% {
+    -webkit-transform: translateX(-300%);
     transform: translateX(-300%); }
   88% {
+    -webkit-transform: translateX(-400%);
     transform: translateX(-400%); }
   100% {
+    -webkit-transform: translateX(-400%);
     transform: translateX(-400%); } }
 
 .steps {
