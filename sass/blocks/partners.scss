@@ -1,5 +1,5 @@
 .partners {
-    padding: 20px 0;
+    padding: 40px 0;
     color: #ffffff;
     background-color: #533ee0;
 }
@@ -7,6 +7,20 @@
 .partners__slider {
     width: 100%;
     overflow: hidden;
+}
+
+.partners__title {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.partners__additional {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: $main-text;
+    font-size: 18px;
+    color: #000000;
 }
 
 .parnters__item {
@@ -77,13 +91,14 @@
 
 @keyframes slide {
     0% {transform: translateX(0%)};
-    10% {transform: translateX(-100%)};
-    25% {transform: translateX(-100%)};
-    35% {transform: translateX(-200%)};
-    50% {transform: translateX(-200%)};
-    60% {transform: translateX(-300%)};
-    75% {transform: translateX(-300%)};
-    85% {transform: translateX(-400%)};
+    11% {transform: translateX(0%)};
+    22% {transform: translateX(-100%)};
+    33% {transform: translateX(-100%)};
+    44% {transform: translateX(-200%)};
+    55% {transform: translateX(-200%)};
+    66% {transform: translateX(-300%)};
+    77% {transform: translateX(-300%)};
+    88% {transform: translateX(-400%)};
     100% {transform: translateX(-400%)};
 }
 
