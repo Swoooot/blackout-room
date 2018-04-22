@@ -10,17 +10,18 @@
 }
 
 .partners__title {
+    font-size: 38px;
     margin: 0;
     margin-bottom: 5px;
 }
 
 .partners__additional {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: bold;
     font-family: $main-text;
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .parnters__item {
@@ -73,6 +74,14 @@
 }
 
 @media(max-width: 400px) {
+    .partners__title {
+        font-size: 18px;
+    }
+
+    .partners__additional {
+        font-size: 14px;
+    }
+
     .parnters__item {
         width: 90%;
         margin-left: 5%;
