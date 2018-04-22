@@ -167,6 +167,18 @@ address {
     address {
         font-size: 12px;
     }
+
+    .contacts__map {
+        position: relative;
+    }
+
+    .contacts__map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     
     .contacts__text {
         padding: 30px 25px;
