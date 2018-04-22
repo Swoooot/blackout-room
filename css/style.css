@@ -914,7 +914,8 @@ h2 {
     margin-right: 5%; }
   .partners__content {
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: flex-start; }
+  .loaded .partners__content {
     animation: slide 10s ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite; } }
