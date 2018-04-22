@@ -1212,6 +1212,14 @@ address {
 
 @media (max-width: 600px) {
   .contacts__map {
-    order: 0; }
+    position: relative;
+    order: 0;
+    min-height: 300px; }
+  .contacts__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .contacts__item {
     width: 100%; } }
