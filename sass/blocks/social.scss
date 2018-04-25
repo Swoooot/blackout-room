@@ -1,0 +1,32 @@
+.social {
+    font-size: 0;
+}
+
+.social__item {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+.social__item:hover {
+    opacity: 1;
+}
+
+.social__item:last-child {
+    margin-right: 0px;
+}
+
+.social__item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
