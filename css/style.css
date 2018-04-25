@@ -1216,7 +1216,9 @@ address {
     order: 0;
     min-height: 300px; }
   .contacts__item {
-    width: 100%; } }
+    width: 100%; }
+  address span {
+    font-size: 16px; } }
 
 .social {
   font-size: 0; }
