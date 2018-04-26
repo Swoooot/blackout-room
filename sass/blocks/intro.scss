@@ -200,11 +200,11 @@
 			0 12px 0 0 #ffffff;
 	}
 
-	&:hover::before {
-		background: $main-color;
+	.opened__menu &::before  {
+		background: yellow;
 		box-shadow: 
-			0 6px 0 0 $main-color,
-			0 12px 0 0 $main-color;
+			0 6px 0 0 yellow,
+			0 12px 0 0 yellow;
 	}
 
 	@media(max-width: 768px) {

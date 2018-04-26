@@ -190,9 +190,9 @@
     height: 2px;
     background: #ffffff;
     box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff; }
-  .intro__switch:hover::before {
-    background: #b89a51;
-    box-shadow: 0 6px 0 0 #b89a51, 0 12px 0 0 #b89a51; }
+  .opened__menu .intro__switch::before {
+    background: yellow;
+    box-shadow: 0 6px 0 0 yellow, 0 12px 0 0 yellow; }
   @media (max-width: 768px) {
     .intro__switch {
       margin-top: 20px;
