@@ -102,6 +102,9 @@
 	height: 80px;
 	display: block;
 	position: relative;
+}
+
+.intro .intro__logo {
 	@media (max-width: 768px) {
 		margin-top: 60px;
 		width: 180px;
@@ -113,6 +116,9 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+.intro .intro__logo-text {
 	@media (max-width: 768px) {
 		display: none;
 	}
@@ -121,6 +127,9 @@
 .intro__logo-brain {
 	position: absolute;
 	left: 20px;
+}
+
+.intro .intro__logo-brain  {
 	@media (max-width: 768px) {
 		width: 180px;
 		height: 160px;
@@ -176,22 +185,33 @@
 }
 
 .intro__switch {
+	padding: 0;
 	display: none;
 	position: absolute;
-	top:10px;
+	top:30px;
 	right: 20px;
 	background-color: transparent;
 	width: 25px;
 	height: 15px;
 	border: none;
+	color: transparent;
+	font-size: 0px;
 	cursor: pointer;
 	z-index: 9999;
+
+	.opened__menu & {
+		top:10px;
+		width: auto;
+		height: auto;
+		color: #ffffff;
+		font-size: 36px;
+	}
 
 	&::before {
 		content: "";
 		position: absolute;
 		left: 0;
-		top: 0px;
+		top: 0;
 		width: 25px;
 		height: 2px;
 		background: #ffffff;
@@ -201,14 +221,11 @@
 	}
 
 	.opened__menu &::before  {
-		background: yellow;
-		box-shadow: 
-			0 6px 0 0 yellow,
-			0 12px 0 0 yellow;
+		display: none;
 	}
 
 	@media(max-width: 768px) {
-		margin-top: 20px;
+		margin-top: 0px;
 		align-self: flex-end;
 	}
 }
@@ -238,7 +255,7 @@
 			z-index:9999;
 		}
 
-		.intro__logo-brain {
+		.intro .intro__logo-brain {
 			width: 90px;
 			height: 80px;
 			left: 20px;

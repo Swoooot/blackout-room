@@ -108,29 +108,32 @@
   height: 80px;
   display: block;
   position: relative; }
-  @media (max-width: 768px) {
-    .intro__logo {
-      margin-top: 60px;
-      width: 180px;
-      height: 160px; } }
+
+@media (max-width: 768px) {
+  .intro .intro__logo {
+    margin-top: 60px;
+    width: 180px;
+    height: 160px; } }
 
 .intro__logo-text {
   position: absolute;
   left: 0;
   top: 0; }
-  @media (max-width: 768px) {
-    .intro__logo-text {
-      display: none; } }
+
+@media (max-width: 768px) {
+  .intro .intro__logo-text {
+    display: none; } }
 
 .intro__logo-brain {
   position: absolute;
   left: 20px; }
-  @media (max-width: 768px) {
-    .intro__logo-brain {
-      width: 180px;
-      height: 160px;
-      left: -60px;
-      top: 0; } }
+
+@media (max-width: 768px) {
+  .intro .intro__logo-brain {
+    width: 180px;
+    height: 160px;
+    left: -60px;
+    top: 0; } }
 
 .intro__main {
   margin-top: 150px;
@@ -171,31 +174,39 @@
   font-weight: normal; }
 
 .intro__switch {
+  padding: 0;
   display: none;
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 20px;
   background-color: transparent;
   width: 25px;
   height: 15px;
   border: none;
+  color: transparent;
+  font-size: 0px;
   cursor: pointer;
   z-index: 9999; }
+  .opened__menu .intro__switch {
+    top: 10px;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    font-size: 36px; }
   .intro__switch::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 0;
     width: 25px;
     height: 2px;
     background: #ffffff;
     box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff; }
   .opened__menu .intro__switch::before {
-    background: yellow;
-    box-shadow: 0 6px 0 0 yellow, 0 12px 0 0 yellow; }
+    display: none; }
   @media (max-width: 768px) {
     .intro__switch {
-      margin-top: 20px;
+      margin-top: 0px;
       align-self: flex-end; } }
 
 @media (max-width: 768px) {
@@ -213,7 +224,7 @@
   .intro__header--sticky .intro__logo-text {
     display: block;
     z-index: 9999; }
-  .intro__header--sticky .intro__logo-brain {
+  .intro__header--sticky .intro .intro__logo-brain {
     width: 90px;
     height: 80px;
     left: 20px;
@@ -1246,3 +1257,49 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black; }
+
+.footer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.footer__nav {
+  display: flex;
+  font-size: 12px;
+  font-family: "Arial", Helvetica, sans-serif; }
+
+.footer__nav-column {
+  margin: 0;
+  margin-right: 80px;
+  padding: 0;
+  list-style-type: none; }
+
+.footer__nav-column:last-child {
+  margin-right: 0; }
+
+.footer__nav-item {
+  margin-bottom: 15px; }
+
+.footer__nav-item:last-child {
+  margin-bottom: 0; }
+
+.footer__nav-item a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.footer__logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "codePro", "Geneva", "sans-serif";
+  font-weight: bold; }
+
+.footer__logo p {
+  margin: 0; }
+
+.footer__logo span {
+  color: #4c40dd; }
