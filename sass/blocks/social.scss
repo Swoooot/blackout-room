@@ -15,6 +15,12 @@
     opacity: 0.8;
 }
 
+.intro .social__item {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
 .social__item:hover {
     opacity: 1;
 }
