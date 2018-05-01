@@ -8,7 +8,7 @@ let scrollBtn = document.querySelector('.scroll-home');
 let scrollBtnVisible = false;
 
 document.addEventListener('scroll', () => {
-    if(window.pageYOffset === 0 && scrollBtnVisible) {
+    if(window.pageYOffset <= 100 && scrollBtnVisible) {
         scrollBtn.style.display = 'none';
         scrollBtnVisible = false;
     } else {
