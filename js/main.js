@@ -7,8 +7,13 @@ window.onload = function() {
 let scrollBtn = document.querySelector('.scroll-home');
 let scrollBtnVisible = false;
 
+
 document.addEventListener('scroll', () => {
-    console.log("!!!");
+    
+    if(document.body.classList.contains('opened__menu--body')) {
+        return;
+    };
+
     if(window.pageYOffset === 0 && scrollBtnVisible) {
         scrollBtn.style.display = '';
         scrollBtnVisible = false;
