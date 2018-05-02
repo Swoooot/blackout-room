@@ -9,16 +9,16 @@ let scrollBtnVisible = false;
 
 
 document.addEventListener('scroll', () => {
-    
+
     if(document.body.classList.contains('opened__menu--body')) {
         return;
     };
 
-    if(window.pageYOffset === 0 && scrollBtnVisible) {
+    if(window.pageYOffset <= 100 && scrollBtnVisible) {
         scrollBtn.style.display = '';
         scrollBtnVisible = false;
     } else {
-        if(window.pageYOffset > 0 && !scrollBtnVisible ) {
+        if(window.pageYOffset >= 100 && !scrollBtnVisible ) {
             scrollBtn.style.display = 'block';
             scrollBtnVisible = true;
         }
