@@ -65,7 +65,6 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
         const time = Math.min(1, ((now - startTime) / duration));
         const timeFunction = easings[easing](time);
         window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
-        console.log((now - startTime));
         if (window.pageYOffset === destinationOffsetToScroll) {
         if (callback) {
             callback();

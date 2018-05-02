@@ -1335,6 +1335,7 @@ address {
 
 .scroll-home {
   position: fixed;
+  display: none;
   bottom: 25px;
   right: 20px;
   width: 50px;
