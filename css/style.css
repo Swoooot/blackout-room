@@ -982,32 +982,48 @@ h2 {
   100% {
     transform: translate3d(-400%, 0, 0); } }
 
-.steps {
+.info {
   padding-top: 60px;
   padding-bottom: 60px;
   color: #ffffff; }
 
-.steps__title {
+.info__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.info__steps,
+.info__participants {
+  width: 48%; }
+
+.info__title {
   max-width: 600px;
   margin-top: 0px;
   font-family: "codePro", "Geneva", "sans-serif";
   font-weight: bold;
   font-size: 38px; }
 
-.steps__title::after {
+.info__title::after {
   content: "";
   display: block;
   margin-top: 15px;
   width: 120px;
   height: 6px;
-  background-color: #4a2be4; }
+  background-color: #5345DD; }
 
-.steps__item {
+.info__participants .info__title::after {
+  background-color: #D8CD63; }
+
+.info__item {
+  margin-top: 20px;
   position: relative;
   max-width: 600px;
-  padding-left: 100px; }
+  padding-left: 100px;
+  padding-bottom: 20px; }
 
-.steps__item::before {
+.info__participants .info__title {
+  margin-bottom: 70px; }
+
+.info__item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1015,52 +1031,83 @@ h2 {
   width: 70px;
   height: 70px; }
 
-.steps__item--lock::before {
+.info__item--lock::before {
   background: #000000 url("../img/logo_lock.svg") no-repeat center center;
   background-size: 98px 98px; }
 
-.steps__item--time::before {
+.info__item--time::before {
   background: #000000 url("../img/logo_time.svg") no-repeat center center;
   background-size: 98px 98px; }
 
-.steps__item--person::before {
+.info__item--person::before {
   background: #000000 url("../img/logo_person.svg") no-repeat center center;
   background-size: 98px 98px; }
 
-.steps__list {
+.info__item--family::before {
+  background: #000000 url("../img/logo_family.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.info__item--tourists::before {
+  background: #000000 url("../img/logo_tourists.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.info__item--gamers::before {
+  background: #000000 url("../img/logo_gamers.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.info__item--companies::before {
+  background: #000000 url("../img/logo_companies.svg") no-repeat center center;
+  background-size: 98px 98px; }
+
+.info__list {
   position: relative; }
 
-.steps__line {
+.info__line {
   position: absolute;
   top: 0;
   left: 0; }
 
-.steps__subtitle {
+.info__subtitle {
+  margin: 0;
   margin-bottom: 10px;
   font-size: 24px;
   font-family: "codePro", "Geneva", "sans-serif";
   font-weight: bold;
-  color: #4a2be4; }
+  color: #5345DD; }
 
-.steps__text {
+.info__participants .info__subtitle {
+  color: #D8CD63; }
+
+.info__text {
   margin: 0;
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: normal; }
 
+@media (max-width: 786px) {
+  .info__wrapper {
+    flex-direction: column;
+    justify-content: flex-start; }
+  .info__steps,
+  .info__participants {
+    width: 100%; }
+  .info__participants .info__title {
+    margin-top: 30px;
+    margin-bottom: 0px; } }
+
 @media (max-width: 568px) {
-  .steps__title {
+  .info__title {
     font-size: 28px; }
-  .steps__subtitle {
+  .info__subtitle {
     font-size: 20px; } }
 
 @media (max-width: 430px) {
-  .steps__title {
+  .info__title {
     font-size: 20px; }
-  .steps__subtitle {
+  .info__subtitle {
     font-size: 16px; }
-  .steps__text {
+  .info__text {
     font-size: 14px; }
-  .steps__title::after {
+  .info__title::after {
     content: "";
     display: block;
     margin-top: 5px;
@@ -1336,8 +1383,8 @@ address {
 
 .scroll-home {
   position: fixed;
-  display: none;
-  bottom: 17px;
+  bottom: 25px;
+  right: -100%;
   right: 15px;
   width: 40px;
   height: 40px;
@@ -1346,12 +1393,20 @@ address {
   border-radius: 50%;
   font-size: 0px;
   cursor: pointer;
-  z-index: 9999; }
+  outline: none;
+  z-index: 9999;
+  transition: 0.2s ease-in-out transform; }
   .scroll-home:hover {
     background-color: rgba(255, 255, 255, 0.5); }
 
+.scroll-home--hidden {
+  transform: translateX(200px); }
+
 .opened__menu .scroll-home {
   display: none; }
+
+.scroll-home:active {
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .scroll-home::after {
   content: "";

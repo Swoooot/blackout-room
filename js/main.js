@@ -15,11 +15,11 @@ document.addEventListener('scroll', () => {
     };
 
     if(window.pageYOffset <= 100 && scrollBtnVisible) {
-        scrollBtn.style.display = '';
+        scrollBtn.classList.add('scroll-home--hidden');
         scrollBtnVisible = false;
     } else {
         if(window.pageYOffset >= 100 && !scrollBtnVisible ) {
-            scrollBtn.style.display = 'block';
+            scrollBtn.classList.remove('scroll-home--hidden');
             scrollBtnVisible = true;
         }
     }

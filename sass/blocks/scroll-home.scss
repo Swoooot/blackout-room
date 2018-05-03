@@ -1,7 +1,7 @@
 .scroll-home {
     position: fixed;
-    display: none;
-    bottom: 17px;
+    bottom: 25px;
+    right: -100%;
     right: 15px;
     width: 40px;
     height: 40px;
@@ -10,15 +10,25 @@
     border-radius: 50%;
     font-size: 0px;
     cursor: pointer;
+    outline: none;
     z-index:9999;
+    transition: 0.2s ease-in-out transform;
 
     &:hover {
         background-color: rgba(255,255,255,0.5);
     }
 }
 
+.scroll-home--hidden {
+    transform: translateX(200px);
+}
+
 .opened__menu .scroll-home {
     display: none;
+}
+
+.scroll-home:active {
+    background-color: rgba(255,255,255,0.7);
 }
 
 .scroll-home::after {
