@@ -1,12 +1,12 @@
 .scroll-home {
     position: fixed;
     display: none;
-    bottom: 25px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 17px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
     background-color: rgba(255,255,255,0.3);
-    border: 3px solid #ffffff;
+    border: none;
     border-radius: 50%;
     font-size: 0px;
     cursor: pointer;
@@ -24,21 +24,23 @@
 .scroll-home::after {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 3px;
-    top: 27px;
-    left: 25px;
+    width: 13px;
+    height: 2px;
+    top: 37%;
+    left: 53%;
     background-color: white;
-    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: 0% 0%;
+    transform: rotate(45deg);
 }
 
 .scroll-home::before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 3px;
-    top: 19px;
-    left: 6px;
+    width: 13px;
+    height: 2px;
+    top: 38%;
+    left: 53%;
     background-color: white;
-    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+    transform: rotate(135deg);
 }
