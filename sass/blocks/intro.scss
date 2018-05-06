@@ -27,8 +27,12 @@
 	height: 30px;
 	position: absolute;
 	left: 50%;
-	bottom: 60px;
+	bottom: 30px;
 	transform: translateX(-50%);
+
+	@media(max-width: 568px) {
+		bottom: 80px;
+	}
 }
 
 .intro__arrow {
