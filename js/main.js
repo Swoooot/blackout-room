@@ -27,5 +27,14 @@ document.addEventListener('scroll', () => {
 
 scrollBtn.addEventListener('click', () => {
     scrollIt(0, 300, 'linear');
-})
+});
+
+let intro = document.querySelector('.intro');
+let introArrows = intro.querySelector('.intro__arrows');
+
+if(intro.offsetHeight < document.documentElement.clientHeight) {
+    introArrows.style.display = 'none';
+}
+
+
 
