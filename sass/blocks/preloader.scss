@@ -28,10 +28,11 @@
 }
 
 .preloader__inner h1 {
-    font-family: $title-text;
+
 }
 
 .preloader__inner span {
+    display: inline-block;
     color: #533ee0;
 }
 
