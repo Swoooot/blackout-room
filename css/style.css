@@ -1504,6 +1504,12 @@ address {
   transform: translate(-50%, -50%);
   color: #ffffff; }
 
+.preloader__inner h1 {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px; }
+
 .preloader__inner span {
   display: inline-block;
   color: #533ee0; }
