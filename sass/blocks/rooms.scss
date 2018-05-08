@@ -85,7 +85,7 @@
 }
 
 .rooms__item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .rooms__item-info {
@@ -219,15 +219,16 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -100%;
     overflow-y: auto;
     font-family: $main-text;
     font-size: 14px;
-    transition: margin-top 0.3s ease-in-out;
+    transform: translateY(-100%) translateZ(0);
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
 }
 
 .rooms__item:hover .rooms__about {
-    margin-top: 15%;
+    transform: translateY(35%) translateZ(0);
 }
 
 @media(max-width: 1040px) {

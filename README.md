@@ -1,4 +1,2 @@
------blackout-room-----
-
-my personal project
+personal project
 
