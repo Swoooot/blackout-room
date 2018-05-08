@@ -574,8 +574,7 @@ h2 {
   color: #ffffff;
   background-color: #000000;
   border-radius: 5px;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-  transition: transform 0.1s linear; }
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4); }
 
 .rooms__reserve:hover {
   transform: scale(1.1); }
@@ -588,12 +587,11 @@ h2 {
   overflow-y: auto;
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 14px;
-  transform: translateY(-100%) translateZ(0);
-  transition: transform 0.3s ease-in-out;
-  backface-visibility: hidden; }
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out; }
 
 .rooms__item:hover .rooms__about {
-  transform: translateY(35%) translateZ(0); }
+  transform: translateY(35%); }
 
 @media (max-width: 1040px) {
   .rooms__item {
@@ -1349,12 +1347,10 @@ address {
     min-height: 300px; }
   .contacts__item {
     width: 100%; }
-  .contacts__numeber {
-    white-space: nowrap; }
+  .contacts_number {
+    width: 300px; }
   address span {
-    font-size: 16px; }
-  address p {
-    min-width: 100%; } }
+    font-size: 16px; } }
 
 .social {
   font-size: 0; }

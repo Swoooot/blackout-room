@@ -199,17 +199,13 @@ address {
         width: 100%;
     }
 
-    .contacts__numeber {
-        white-space: nowrap;
+    .contacts_number {
+        width: 300px;
     }
 
     address {
         & span {
             font-size: 16px;
-        }
-
-        & p {
-            min-width: 100%;
         }
     }
 
