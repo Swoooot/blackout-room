@@ -1347,7 +1347,7 @@ address {
     min-height: 300px; }
   .contacts__item {
     width: 100%; }
-  .contacts_number {
+  .contacts__number {
     width: 300px; }
   address span {
     font-size: 16px; } }
