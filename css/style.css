@@ -1255,7 +1255,7 @@ address {
   text-transform: uppercase; }
   address p,
   address a {
-    display: block;
+    display: inline-block;
     opacity: 0.9;
     text-decoration: none;
     color: #ffffff;
@@ -1347,8 +1347,6 @@ address {
     min-height: 300px; }
   .contacts__item {
     width: 100%; }
-  .contacts__number {
-    width: 300px; }
   address span {
     font-size: 16px; } }
 

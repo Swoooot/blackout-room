@@ -67,7 +67,7 @@ address {
 
     & p,
     & a {
-        display: block;
+        display: inline-block;
         opacity: 0.9;
         text-decoration: none;
         color: #ffffff;
@@ -197,10 +197,6 @@ address {
 
     .contacts__item {
         width: 100%;
-    }
-
-    .contacts__number {
-        width: 300px;
     }
 
     address {
