@@ -307,6 +307,7 @@
     transform: translate(-50%, 0);
     opacity: 0; }
   50% {
+    transform: translate(-50%, 15px);
     opacity: 1; }
   100% {
     transform: translate(-50%, 30px);
