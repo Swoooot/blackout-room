@@ -1277,6 +1277,8 @@ address {
   font-style: normal;
   font-size: 14px;
   text-transform: uppercase; }
+  address p {
+    width: 100%; }
   address p,
   address a {
     display: inline-block;

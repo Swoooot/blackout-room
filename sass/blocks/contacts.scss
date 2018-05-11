@@ -65,6 +65,10 @@ address {
     font-size: 14px;
     text-transform: uppercase;
 
+    & p {
+        width: 100%;
+    }
+
     & p,
     & a {
         display: inline-block;
