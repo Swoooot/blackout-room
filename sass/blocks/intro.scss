@@ -270,34 +270,45 @@
 }
 
 .intro__switch {
-	padding: 0;
+	padding: 18px 20px;
 	display: none;
 	position: absolute;
-	top:30px;
+	top:25px;
 	right: 20px;
 	background-color: transparent;
 	width: 25px;
 	height: 15px;
 	border: none;
+	border-radius: 2px;
 	color: transparent;
 	font-size: 0px;
 	cursor: pointer;
 	z-index: 9999;
+	background-color: rgba(119, 119, 119, 0.4);
+
+	&:active {
+		background-color: rgba(119, 119, 119, 0.9);
+	}
 
 	.opened__menu & {
-		top:10px;
+		padding: 0;
+		top: 20px;
+		right: 40px;
 		width: auto;
 		height: auto;
 		color: #ffffff;
 		font-size: 36px;
 		outline: none;
+		background-color: transparent;
 	}
 
 	&::before {
 		content: "";
 		position: absolute;
+		margin: 0 auto;
 		left: 0;
-		top: 0;
+		right: 0;
+		top: 12px;
 		width: 25px;
 		height: 2px;
 		background: #ffffff;

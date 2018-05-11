@@ -241,31 +241,40 @@
       text-align: center; } }
 
 .intro__switch {
-  padding: 0;
+  padding: 18px 20px;
   display: none;
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 20px;
   background-color: transparent;
   width: 25px;
   height: 15px;
   border: none;
+  border-radius: 2px;
   color: transparent;
   font-size: 0px;
   cursor: pointer;
-  z-index: 9999; }
+  z-index: 9999;
+  background-color: rgba(119, 119, 119, 0.4); }
+  .intro__switch:active {
+    background-color: rgba(119, 119, 119, 0.9); }
   .opened__menu .intro__switch {
-    top: 10px;
+    padding: 0;
+    top: 20px;
+    right: 40px;
     width: auto;
     height: auto;
     color: #ffffff;
     font-size: 36px;
-    outline: none; }
+    outline: none;
+    background-color: transparent; }
   .intro__switch::before {
     content: "";
     position: absolute;
+    margin: 0 auto;
     left: 0;
-    top: 0;
+    right: 0;
+    top: 12px;
     width: 25px;
     height: 2px;
     background: #ffffff;
@@ -408,8 +417,8 @@ h2 {
   padding: 0 25px; }
 
 .rooms {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #000000;
   text-align: center; }
 
@@ -618,6 +627,9 @@ h2 {
     font-size: 28px; } }
 
 @media (max-width: 568px) {
+  .rooms {
+    padding-top: 40px;
+    padding-bottom: 40px; }
   .rooms__item {
     position: relative;
     display: block; }
@@ -942,7 +954,7 @@ h2 {
     border-radius: 0px 0px 10px 10px; } }
 
 .partners {
-  padding: 40px 0;
+  padding: 80px 0;
   color: #ffffff;
   background-color: #533ee0; }
 
@@ -991,6 +1003,8 @@ h2 {
     justify-content: flex-start; } }
 
 @media (max-width: 568px) {
+  .partners {
+    padding: 40px 0; }
   .parnters__item {
     width: 45%;
     margin-bottom: 10px;
@@ -1376,8 +1390,8 @@ address {
   opacity: 0.8; }
 
 .intro .social__item {
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   opacity: 0.9; }
 

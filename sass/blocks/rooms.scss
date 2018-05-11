@@ -1,6 +1,6 @@
 .rooms {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #000000;
     text-align: center;
 }
@@ -252,6 +252,11 @@
 }
 
 @media(max-width: 568px) {
+    .rooms {
+        padding-top: 40px;
+        padding-bottom: 40px;  
+    }
+
     .rooms__item {
         position: relative;
         display: block;
