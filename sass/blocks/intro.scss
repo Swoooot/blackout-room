@@ -29,8 +29,12 @@
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	bottom: 110px;
+	bottom: 70px;
 	animation: arrowMove 1.3s linear infinite;
+
+	@media(max-width: 568px) {
+		bottom: 110px;
+	}
 }
 
 @keyframes arrowMove {
