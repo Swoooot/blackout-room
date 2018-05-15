@@ -9,6 +9,13 @@
 	font-family: $main-text;
 }
 
+.intro.intro--rooms {
+	width: auto;
+	height: auto;
+	max-height: none;
+	min-height: 0;
+}
+
 .intro__background {
 	min-width: 320px;
 	overflow: hidden;
@@ -64,10 +71,6 @@
 	bottom: 0px;
 }
 
-// .intro__arrow--bottom {
-// 	bottom: 10px;
-// }
-
 .intro__arrow::after {
 	content: "";
 	position: absolute;
@@ -78,7 +81,6 @@
 	background-color: rgba(255, 255, 255, 0.9);
 	transform-origin: 100% 100%;
 	transform: rotate(45deg);
-	// border-radius: 40% 0 0 40%;
 }
 
 .intro__arrow::before {
@@ -91,7 +93,6 @@
 	background-color:  rgba(255, 255, 255, 0.9);
 	transform: rotate(-45deg);
 	transform-origin: 0% 100%;
-	// border-radius: 0 40% 40% 0;
 }
 
 .intro__background::before {
@@ -179,7 +180,7 @@
 	position: relative;
 }
 
-.intro .intro__logo {
+.intro--index .intro__logo {
 	@media (max-width: 768px) {
 		margin-top: 60px;
 		width: 180px;
@@ -204,12 +205,18 @@
 	left: 20px;
 }
 
-.intro .intro__logo-brain  {
+.intro--index .intro__logo-brain  {
 	@media (max-width: 768px) {
 		width: 180px;
 		height: 160px;
 		left: -60px;
 		top: 0;
+	}
+}
+
+.intro--rooms .intro__logo-brain {
+	@media (max-width: 768px) {
+		display: none;
 	}
 }
 

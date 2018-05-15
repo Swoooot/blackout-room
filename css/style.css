@@ -29,6 +29,12 @@
   font-size: 14px;
   font-family: "Arial", Helvetica, sans-serif; }
 
+.intro.intro--rooms {
+  width: auto;
+  height: auto;
+  max-height: none;
+  min-height: 0; }
+
 .intro__background {
   min-width: 320px;
   overflow: hidden;
@@ -169,7 +175,7 @@
   position: relative; }
 
 @media (max-width: 768px) {
-  .intro .intro__logo {
+  .intro--index .intro__logo {
     margin-top: 60px;
     width: 180px;
     height: 160px; } }
@@ -188,11 +194,15 @@
   left: 20px; }
 
 @media (max-width: 768px) {
-  .intro .intro__logo-brain {
+  .intro--index .intro__logo-brain {
     width: 180px;
     height: 160px;
     left: -60px;
     top: 0; } }
+
+@media (max-width: 768px) {
+  .intro--rooms .intro__logo-brain {
+    display: none; } }
 
 .intro__main {
   margin-top: 150px;
@@ -1543,3 +1553,24 @@ address {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+
+.room {
+  margin-top: 60px;
+  color: #ffffff; }
+
+.room-page--chambre {
+  background: #000000 url("../img/key_background.png") no-repeat 100px center;
+  background-attachment: fixed;
+  background-position-x: 15%;
+  background-position-y: 120px;
+  background-size: 200px; }
+
+.room__content {
+  width: 30%;
+  padding-left: 30%; }
+
+.room__wrapper {
+  min-height: 700px; }
+
+.room__title {
+  font-family: "codePro", "Geneva", "sans-serif"; }
