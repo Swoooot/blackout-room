@@ -6,9 +6,13 @@
 .room-page--chambre {
     background: #000000 url("../img/key_background.png") no-repeat 100px center;
     background-attachment: fixed;
-    background-position-x: 15%;
     background-position-y: 120px;
-    background-size: 200px;
+    background-size: 20%;
+    background-position-x: 25%;
+
+    @media(max-width: 1300px) {
+        background-position-x: 10%;
+    }
 }
 
 .room__content {
