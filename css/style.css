@@ -1570,11 +1570,49 @@ address {
       background-position-x: 10%; } }
 
 .room__content {
-  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
   padding-left: 30%; }
+
+.room__main {
+  width: 100%; }
+
+.room__header {
+  width: 50%; }
+
+.room__description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.room__text {
+  width: 55%; }
+
+.room__media {
+  margin-top: 50px;
+  width: 40%; }
+
+.room__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%; }
+
+.room__gallery > * {
+  width: 49%;
+  height: 100%;
+  display: block;
+  border: 1px solid #5335e3; }
 
 .room__wrapper {
   min-height: 700px; }
 
 .room__title {
   font-family: "codePro", "Geneva", "sans-serif"; }
+
+.room__video {
+  border: 1px solid #5335e3;
+  border-radius: 2px; }
