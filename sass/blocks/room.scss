@@ -12,7 +12,17 @@
 
     @media(max-width: 1300px) {
         background-size: 15%;
-        background-position-x: 10%;
+        background-position-x: 15%;
+    }
+
+    @media(max-width: 880px) {
+        background-size: 25%;
+    }
+
+    @media(max-width: 520px) {
+        background-size: 50%;
+        background-position-x: 50%;
+        background-position-y: 0;
     }
 }
 
@@ -43,7 +53,7 @@
 }
 
 .room__media {
-    margin-top: 50px;
+    margin-top: -50px;
     width: 40%;
 }
 
@@ -62,15 +72,137 @@
     border: 1px solid #5335e3;
 }
 
-.room__wrapper {
-    min-height: 700px;
+.room__title {
+    margin: 0;
+    font-family: $title-text;
+    font-size: 42px;
 }
 
-.room__title {
+.room__subtitle {
+    color: #5335e3;
+}
+
+.room__additional {
+    margin: 0;
+    font-family: $main-text;
+    font-size: 14px;
+}
+
+.room__bedges {
+    font-size: 0;
+}
+
+.room__bedges > * {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
     font-family: $title-text;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+}
+
+.room__difficulty {
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.room__people,
+.room__time {
+    position: relative; 
+    padding-left: 35px;
+}
+
+.room__people::before,
+.room__time::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 25px;
+    height: 35px;
+}
+
+.room__people::before {
+    background: url("../img/person_icon.svg") no-repeat center center;
+    background-size: 32px 34px;
+}
+
+.room__time::before {
+    background: url("../img/sand-clock1.svg") no-repeat center center;
+    background-size: 32px 20px;
+}
+
+.room__title span {
+    color: #5335e3;
 }
 
 .room__video {
     border: 1px solid #5335e3;
     border-radius: 2px;
+}
+
+@media(max-width: 950px) {
+    .room__title {
+        font-size: 32px;
+    }
+
+    .room__bedges > * {
+        padding: 5px 10px;
+        font-size: 18px;
+        font-family: $title-text;
+        font-weight: bold;
+        border: 2px solid #ffffff;
+    }
+
+    .room__difficulty {
+        border: 2px solid yellow;
+    }
+
+    .room__people,
+    .room__time {
+        padding-left: 35px;
+    }
+}
+
+@media(max-width: 880px) {
+    .room__content {
+        width: 60%;
+        padding-left: 40%;
+    }
+
+    .room__header {
+        width: 100%;
+    }
+
+    .room__description {
+        flex-direction: column;
+    }
+    
+    .room__description {
+        width: 100%;
+    }
+
+    .room__text {
+        width: 100%;
+    }
+
+    .room__media {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 520px) {
+    .room__content {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        margin-top: 140px;
+        background: rgba(28, 28, 28, 0.7);
+        border-radius: 15px;
+    }
 }
