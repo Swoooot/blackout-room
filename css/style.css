@@ -1562,7 +1562,7 @@ address {
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
   background-attachment: fixed;
   background-position-y: 120px;
-  background-size: 18%;
+  background-size: 15%;
   background-position-x: 20%; }
   @media (max-width: 1300px) {
     .room-page--chambre {
