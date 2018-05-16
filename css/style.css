@@ -1558,21 +1558,34 @@ address {
   margin-top: 60px;
   color: #ffffff; }
 
-.room-page--chambre {
+.background-wrap {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.background__fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
-  background-attachment: fixed;
   background-position-y: 120px;
   background-size: 15%;
-  background-position-x: 20%; }
+  background-position-x: 20%;
+  z-index: -1; }
   @media (max-width: 1300px) {
-    .room-page--chambre {
+    .background__fixed {
       background-size: 15%;
       background-position-x: 15%; } }
   @media (max-width: 880px) {
-    .room-page--chambre {
+    .background__fixed {
       background-size: 25%; } }
   @media (max-width: 520px) {
-    .room-page--chambre {
+    .background__fixed {
       background-size: 50%;
       background-position-x: 50%;
       background-position-y: 0; } }
