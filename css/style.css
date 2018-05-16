@@ -1802,5 +1802,4 @@ address {
     .background-fixed--expiriance {
       background-size: 100%;
       background-position-x: 50%;
-      background-position-y: 150px;
-      transform: rotate(150deg); } }
+      background-position-y: 150px; } }
