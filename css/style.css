@@ -1788,6 +1788,10 @@ address {
       background-position-x: 50%;
       background-position-y: 0; } }
 
+@font-face {
+  font-family: "FixFont";
+  src: url(); }
+
 .background-fixed--expiriance::after {
   content: "";
   position: absolute;
@@ -1803,9 +1807,7 @@ address {
   background-position-x: 0%;
   font-size: 0;
   z-index: -1;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch; }
+  font-family: "FixFont"; }
   @media (max-width: 1300px) {
     .background-fixed--expiriance::after {
       background-size: 30%;
