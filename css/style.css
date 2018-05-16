@@ -1755,7 +1755,9 @@ address {
 .background-fixed__wrap {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .background-fixed__inner {
   position: fixed;
@@ -1796,7 +1798,7 @@ address {
   height: 100vh;
   background: #000000 url("../img/hand_background.png") no-repeat 100px center;
   background-position-y: 100%;
-  background-size: 15%;
+  background-size: 40%;
   background-position-x: 0%;
   font-size: 0;
   z-index: -1; }
