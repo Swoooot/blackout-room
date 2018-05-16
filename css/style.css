@@ -1757,17 +1757,6 @@ address {
   top: 0;
   left: 0; }
 
-.background-fixed__inner {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0);
-  will-change: transform;
-  z-index: -1; }
-
 .background-fixed--chambre {
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
   background-position-y: 120px;
@@ -1788,18 +1777,43 @@ address {
       background-position-x: 50%;
       background-position-y: 0; } }
 
-.background-fixed--expiriance {
+.background-fixed--expiriance::after {
+  content: "";
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -1; }
+
+.background-fixed--expiriance::after {
   background: #000000 url("../img/hand_background.png") no-repeat 100px center;
+  background-position-y: 100%;
   background-size: 15%;
   background-position-x: 0%;
   font-size: 0;
   z-index: -1; }
   @media (max-width: 1300px) {
-    .background-fixed--expiriance {
+    .background-fixed--expiriance::after {
       background-size: 30%;
       background-position-x: 0%; } }
+  @media (max-width: 1100px) {
+    .background-fixed--expiriance::after {
+      background-size: 40%;
+      background-position-x: -17%; } }
+  @media (max-width: 880px) {
+    .background-fixed--expiriance::after {
+      background-size: 45%;
+      background-position-x: -6%; } }
+  @media (max-width: 800px) {
+    .background-fixed--expiriance::after {
+      background-size: 55%;
+      background-position-x: -35%; } }
   @media (max-width: 520px) {
-    .background-fixed--expiriance {
+    .background-fixed--expiriance::after {
       background-size: 100%;
       background-position-x: 50%;
       background-position-y: 150px;
