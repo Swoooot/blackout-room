@@ -19,10 +19,12 @@
 }
 
 .room__description {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    font-family: $main-text;
+    font-size: 16px;
 }
 
 .room__text {
@@ -88,6 +90,11 @@
     border: 2px solid yellow;
 }
 
+.room-page--expiriance .room__difficulty {
+    color: red;
+    border: 2px solid red;
+}
+
 .room__people,
 .room__time {
     position: relative; 
@@ -121,6 +128,31 @@
 .room__video {
     border: 1px solid #5335e3;
     border-radius: 2px;
+}
+
+.room__reserver {
+    width: 50%;
+    text-align: center;
+}
+
+.room__reserver a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: $main-text;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.2s linear;
+}
+
+.room__reserver a:hover {
+    background-color: rgba(255, 255,255, 0.2);
 }
 
 @media(max-width: 950px) {
@@ -172,6 +204,11 @@
         margin-top: 20px;
         width: 100%;
     }
+
+    .room__reserver {
+        width: 100%;
+        margin-top: 40px;
+    }
 }
 
 @media(max-width: 520px) {
@@ -212,5 +249,14 @@
     
     .room__time::before {
         background-size: 28px 16px;
+    }
+
+    .room__reserver {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .room__description p {
+        font-size: 14px;
     }
 }
