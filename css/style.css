@@ -1811,10 +1811,6 @@ address {
     .background-fixed--expiriance {
       background-size: 55%;
       background-position-x: -35%; } }
-  @media (max-width: 650px) {
-    .background-fixed--expiriance {
-      background-size: 65%;
-      background-position-x: -70%; } }
   @media (max-width: 520px) {
     .background-fixed--expiriance {
       top: -20%;
@@ -1823,8 +1819,4 @@ address {
       background-size: 100%;
       background-position-x: 0;
       background-position-y: 100%;
-      transform: rotate(130deg); } }
-  @media (max-width: 340px) {
-    .background-fixed--expiriance {
-      top: -10%;
       transform: rotate(150deg); } }
