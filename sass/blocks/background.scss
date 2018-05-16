@@ -14,7 +14,6 @@
     transform: translateZ(0);
     will-change: transform;
     z-index: -1;
-    transform: all 0.1s linear;
 }
 
 .background-fixed--chambre {
@@ -89,6 +88,6 @@
         // background-size: 100%;
         // background-position-x: 120px;
         // background-position-y: 100%;
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 }

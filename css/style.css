@@ -1766,8 +1766,7 @@ address {
   height: 100%;
   transform: translateZ(0);
   will-change: transform;
-  z-index: -1;
-  transform: all 0.1s linear; }
+  z-index: -1; }
 
 .background-fixed--chambre {
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
@@ -1825,4 +1824,4 @@ address {
       background-size: 100%;
       background-position-x: 50%;
       background-position-y: -120px;
-      transform: rotate(180deg); } }
+      transform: rotate(90deg); } }
