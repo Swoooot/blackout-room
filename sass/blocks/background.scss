@@ -42,7 +42,7 @@
 
 .background-fixed--expiriance {
     background: #000000 url("../img/hand_background.png") no-repeat 100px center;
-    background-position-y: 0px;
+    background-position-y: 100%;
     background-size: 15%;
     background-position-x: 0%;
     font-size: 0;
@@ -72,13 +72,13 @@
     @media(max-width: 520px) {
         background-size: 100%;
         background-position-x: 50%;
-        background-position-y: 300px;
-        // top: -20%;
+        background-position-y: 150px;
+        top: -20%;
         // width: 100%;
         // height: 100%;
         // background-size: 100%;
         // background-position-x: 120px;
         // background-position-y: 100%;
-        // transform: rotate(150deg);
+        transform: rotate(150deg);
     }
 }
