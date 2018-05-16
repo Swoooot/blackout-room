@@ -1799,23 +1799,3 @@ address {
     .background-fixed--expiriance {
       background-size: 30%;
       background-position-x: 0%; } }
-  @media (max-width: 1100px) {
-    .background-fixed--expiriance {
-      background-size: 40%;
-      background-position-x: -17%; } }
-  @media (max-width: 880px) {
-    .background-fixed--expiriance {
-      background-size: 45%;
-      background-position-x: -6%; } }
-  @media (max-width: 800px) {
-    .background-fixed--expiriance {
-      background-size: 55%;
-      background-position-x: -35%; } }
-  @media (max-width: 520px) {
-    .background-fixed--expiriance {
-      top: -20%;
-      width: 120%;
-      height: 120%;
-      background-size: 100%;
-      background-position-x: 0;
-      background-position-y: 100%; } }
