@@ -45,16 +45,7 @@
     src: url();
 }
 
-.background-fixed--expiriance::after {
-    content: "";
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120vh;
-}
-
-.background-fixed--expiriance::after {
+.background-fixed--expiriance {
     background: #000000 url("../img/hand_background.png") no-repeat 100px center;
     background-position-y: 100%;
     background-size: 15%;
@@ -84,7 +75,8 @@
 
 
     @media(max-width: 520px) {
-        top: -120px;
+        height: 120vh;
+        top: -270px;
         background-size: 100%;
         background-position-x: 50%;
         background-position-y: 150px;
