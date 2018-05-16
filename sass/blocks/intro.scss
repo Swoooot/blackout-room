@@ -142,7 +142,9 @@
     flex-wrap: wrap;
 	align-items: center;
 	padding: 0px 30px;
+ }
 
+ .intro--index .intro__wrapper {
 	@media(max-width: 768px) {
 		flex-direction: column-reverse;
 	}
@@ -194,7 +196,7 @@
 	top: 0;
 }
 
-.intro .intro__logo-text {
+.intro--index .intro__logo-text {
 	@media (max-width: 768px) {
 		display: none;
 	}
@@ -214,11 +216,11 @@
 	}
 }
 
-.intro--rooms .intro__logo-brain {
-	@media (max-width: 768px) {
-		display: none;
-	}
-}
+// .intro--rooms .intro__logo-brain {
+// 	@media (max-width: 768px) {
+// 		display: none;
+// 	}
+// }
 
 .intro__main {
 	margin-top: 150px;

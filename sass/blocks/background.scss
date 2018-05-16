@@ -42,11 +42,6 @@
     }
 }
 
-@font-face {
-    font-family: "FixFont";
-    src: url();
-}
-
 .background-fixed--expiriance {
     height: 100vh;
     background: #000000 url("../img/hand_background.png") no-repeat 100px center;
@@ -76,10 +71,24 @@
         background-position-x: -35%;
     }
 
+    @media(max-width: 768px) {
+        background-size: 75%;
+        background-position-x: -130%;
+    }
+
 
     @media(max-width: 520px) {
         height: 120vh;
         top: -270px;
+        background-size: 100%;
+        background-position-x: 50%;
+        background-position-y: 150px;
+        transform: rotate(150deg) translate3d(0,0,0);
+    }
+
+    @media(max-width: 380px) {
+        height: 120vh;
+        top: -320px;
         background-size: 100%;
         background-position-x: 50%;
         background-position-y: 150px;
