@@ -1807,7 +1807,7 @@ address {
   background-position-x: 0%;
   font-size: 0;
   z-index: -1;
-  font-family: "FixFont"; }
+  border: 2px solid grey; }
   @media (max-width: 1300px) {
     .background-fixed--expiriance::after {
       background-size: 30%;
