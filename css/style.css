@@ -1793,6 +1793,7 @@ address {
   src: url(); }
 
 .background-fixed--expiriance {
+  height: 100vh;
   background: #000000 url("../img/hand_background.png") no-repeat 100px center;
   background-position-y: 100%;
   background-size: 15%;
