@@ -1801,6 +1801,6 @@ address {
       background-position-x: 0%; } }
   @media (max-width: 520px) {
     .background-fixed--expiriance {
-      background-size: 70%;
+      background-size: 100%;
       background-position-x: 50%;
       background-position-y: 0; } }
