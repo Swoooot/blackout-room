@@ -1799,3 +1799,12 @@ address {
     .background-fixed--expiriance {
       background-size: 30%;
       background-position-x: 0%; } }
+  @media (max-width: 520px) {
+    .background-fixed--expiriance {
+      top: -20%;
+      width: 120%;
+      height: 120%;
+      background-size: 100%;
+      background-position-x: 0;
+      background-position-y: 100%;
+      transform: rotate(150deg); } }
