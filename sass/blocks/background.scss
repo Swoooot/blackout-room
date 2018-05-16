@@ -58,6 +58,7 @@
     z-index: -1;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
 
     @media(max-width: 1300px) {
         background-size: 30%;
