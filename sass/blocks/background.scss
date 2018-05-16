@@ -56,6 +56,8 @@
     background-position-x: 0%;
     font-size: 0;
     z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     @media(max-width: 1300px) {
         background-size: 30%;
@@ -88,6 +90,6 @@
         // background-size: 100%;
         // background-position-x: 120px;
         // background-position-y: 100%;
-        transform: rotate(90deg) translate3d(0,0,0);;
+        transform: rotate(90deg) translate3d(0,0,0);
     }
 }

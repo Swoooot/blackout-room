@@ -1802,7 +1802,9 @@ address {
   background-size: 15%;
   background-position-x: 0%;
   font-size: 0;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
   @media (max-width: 1300px) {
     .background-fixed--expiriance::after {
       background-size: 30%;
