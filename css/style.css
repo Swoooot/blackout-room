@@ -1790,7 +1790,6 @@ address {
 
 .background-fixed--expiriance {
   background: #000000 url("../img/hand_background.png") no-repeat 100px center;
-  background-position-y: 100%;
   background-size: 15%;
   background-position-x: 0%;
   font-size: 0;
