@@ -1558,38 +1558,6 @@ address {
   margin-top: 60px;
   color: #ffffff; }
 
-.background-wrap {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.background__fixed {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0);
-  will-change: transform;
-  background: #000000 url("../img/key_background.png") no-repeat 100px center;
-  background-position-y: 120px;
-  background-size: 15%;
-  background-position-x: 20%;
-  z-index: -1; }
-  @media (max-width: 1300px) {
-    .background__fixed {
-      background-size: 15%;
-      background-position-x: 15%; } }
-  @media (max-width: 880px) {
-    .background__fixed {
-      background-size: 25%; } }
-  @media (max-width: 520px) {
-    .background__fixed {
-      background-size: 50%;
-      background-position-x: 50%;
-      background-position-y: 0; } }
-
 .room__content {
   display: flex;
   justify-content: space-between;
@@ -1654,7 +1622,8 @@ address {
   font-size: 18px;
   font-family: "codePro", "Geneva", "sans-serif";
   font-weight: bold;
-  border: 2px solid #ffffff; }
+  border: 2px solid #ffffff;
+  border-radius: 2px; }
 
 .room__difficulty {
   color: yellow;
@@ -1724,7 +1693,61 @@ address {
   .room__content {
     box-sizing: border-box;
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 25px;
     margin-top: 140px;
     background: rgba(28, 28, 28, 0.7);
-    border-radius: 15px; } }
+    border-radius: 15px; }
+  .room__title {
+    font-size: 26px; }
+  .room__bedges > * {
+    padding: 7px 8px;
+    font-size: 16px; }
+  .room__people,
+  .room__time {
+    padding-left: 30px; }
+  .room__people::before,
+  .room__time::before {
+    top: -2px;
+    left: 10px;
+    width: 21px;
+    height: 31px; }
+  .room__people::before {
+    background-size: 28px 30px; }
+  .room__time::before {
+    background-size: 28px 16px; } }
+
+.background-fixed__wrap {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.background-fixed__inner {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -1; }
+
+.background-fixed--chambre {
+  background: #000000 url("../img/key_background.png") no-repeat 100px center;
+  background-position-y: 120px;
+  background-size: 15%;
+  background-position-x: 20%;
+  font-size: 0;
+  z-index: -1; }
+  @media (max-width: 1300px) {
+    .background-fixed--chambre {
+      background-size: 15%;
+      background-position-x: 15%; } }
+  @media (max-width: 880px) {
+    .background-fixed--chambre {
+      background-size: 25%; } }
+  @media (max-width: 520px) {
+    .background-fixed--chambre {
+      background-size: 50%;
+      background-position-x: 50%;
+      background-position-y: 0; } }
