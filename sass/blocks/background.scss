@@ -42,8 +42,8 @@
 
 .background-fixed--expiriance {
     background: #000000 url("../img/key_background.png") no-repeat 100px center;
-    background-position-y: 95%;
-    background-size: 100%;
+    background-position-y: 120px;
+    background-size: 15%;
     background-position-x: 0%;
     font-size: 0;
     z-index: -1;
@@ -70,11 +70,14 @@
 
 
     @media(max-width: 520px) {
-        top: -20%;
-        width: 100%;
-        height: 100%;
-        background-size: 100%;
-        background-position-x: 120px;
+        background-size: 70%;
+        background-position-x: 50%;
+        background-position-y: 0;
+        // top: -20%;
+        // width: 100%;
+        // height: 100%;
+        // background-size: 100%;
+        // background-position-x: 120px;
         // background-position-y: 100%;
         // transform: rotate(150deg);
     }
