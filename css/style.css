@@ -1764,7 +1764,10 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; }
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -1;
+  transform: all 0.1s linear; }
 
 .background-fixed--chambre {
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
