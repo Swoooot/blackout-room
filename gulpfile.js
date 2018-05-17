@@ -28,7 +28,7 @@ gulp.task('style', function() {
     gulp.src('sass/style.scss')
       .pipe(plumber())
       .pipe(sass())
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('css'))
       .pipe(browserSync.stream());
 });
 

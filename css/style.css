@@ -1591,13 +1591,15 @@ address {
   width: 55%; }
 
 .room__media {
-  margin-top: -50px;
-  width: 40%; }
+  width: 40%;
+  margin-top: -100px; }
 
 .room__gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
   margin-top: 10px;
   width: 100%; }
 
@@ -1610,11 +1612,19 @@ address {
   cursor: pointer; }
 
 .room__gallery > * {
-  width: 49%;
+  display: inline-block;
+  width: 48%;
   height: 100%;
-  display: block;
   margin: 0;
-  border: 1px solid #5335e3; }
+  cursor: pointer; }
+
+.room__gallery a {
+  display: block;
+  margin-bottom: 2%;
+  border: 1px solid rgba(87, 53, 255, 0.7); }
+
+.room__gallery a:hover {
+  border: 1px solid #5735ff; }
 
 .room__title {
   margin: 0;
@@ -1684,25 +1694,28 @@ address {
 
 .room__reserver {
   width: 50%;
+  margin-bottom: 40px;
+  margin-top: 20px;
   text-align: center; }
 
 .room__reserver a {
   display: inline-block;
   vertical-align: top;
-  padding: 5px 10px;
+  padding: 10px 20px;
   margin: 0 auto;
-  margin-top: 15px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Arial", Helvetica, sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
   border-radius: 5px;
-  transition: background-color 0.2s linear; }
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+  cursor: hand; }
 
 .room__reserver a:hover {
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 @media (max-width: 950px) {
   .room__title {
@@ -1786,15 +1799,14 @@ address {
   height: 100%;
   transform: translateZ(0);
   will-change: transform;
-  z-index: -1; }
+  z-index: -9999; }
 
 .background-fixed--chambre {
   background: #000000 url("../img/key_background.png") no-repeat 100px center;
   background-position-y: 120px;
   background-size: 15%;
   background-position-x: 20%;
-  font-size: 0;
-  z-index: -1; }
+  font-size: 0; }
   @media (max-width: 1300px) {
     .background-fixed--chambre {
       background-size: 15%;
@@ -1847,7 +1859,7 @@ address {
   @media (max-width: 380px) {
     .background-fixed--expiriance {
       height: 120vh;
-      top: -55%;
+      top: -320px;
       background-size: 100%;
       background-position-x: 50%;
       background-position-y: 150px;
