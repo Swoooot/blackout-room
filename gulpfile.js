@@ -28,7 +28,7 @@ gulp.task('style', function() {
     gulp.src('sass/style.scss')
       .pipe(plumber())
       .pipe(sass())
-      .pipe(gulp.dest('css'))
+      .pipe(gulp.dest('build/css'))
       .pipe(browserSync.stream());
 });
 
@@ -37,7 +37,7 @@ gulp.task('copy', function() {
       'fonts/**/*.{woff,woff2}',
       'img/**/*.{jpg,webp,svg,png}',
       'js/**',
-      'css/**'
+      'css/**/*'
     ], {
       base: '.'
     })
