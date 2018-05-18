@@ -253,12 +253,15 @@
 }
 
 @media(max-width: 520px) {
+    .room__wrapper {
+        margin-bottom: 30px;
+    }
+    
     .room__content {
         box-sizing: border-box;
         width: 100%;
         padding: 20px 25px;
         margin-top: 90px;
-        margin-bottom: 20px;
         background: rgba(28, 28, 28, 0.7);
         border-radius: 15px;
     }
