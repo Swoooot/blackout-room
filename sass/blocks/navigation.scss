@@ -88,3 +88,20 @@
 		background-color: rgba(25, 14, 37, 0.5);
 	}
 }
+
+
+.lang_switch {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	margin-right: 0.5em;
+	position: relative;
+	top: 7px;
+  }
+
+  @media (max-width: 880px) {
+	.lang_switch {
+		top: 0.7em;
+	  };
+  }
