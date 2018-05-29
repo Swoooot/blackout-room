@@ -437,7 +437,7 @@ h2 {
   padding: 0 25px; }
 
 .rooms {
-  padding-top: 80px;
+  padding-top: 2em;
   padding-bottom: 80px;
   background-color: #000000;
   text-align: center; }
@@ -1724,20 +1724,26 @@ address {
   display: inline-block;
   vertical-align: top;
   padding: 10px 20px;
-  margin: 0.5em;
-  font-size: 20px;
   font-family: "Arial", Helvetica, sans-serif;
   text-decoration: none;
-  color: #000000;
+  color: #FFFFFF;
   text-transform: uppercase;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(87, 53, 191, 0.8);
   transition: background-color 0.2s linear;
   cursor: pointer;
   cursor: hand; }
 
+.room__reserver-book {
+  margin: 0;
+  font-size: 32px; }
+
+.room__reserver-info {
+  margin-top: 0.5em;
+  font-size: 20px; }
+
 .room__reserver a:hover {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(62, 39, 255, 0.9); }
 
 @media (max-width: 950px) {
   .room__title {
@@ -1851,7 +1857,7 @@ address {
   text-align: center; }
 
 .room__plus-container {
-  width: 45%; }
+  width: 40%; }
 
 @media (max-width: 880px) {
   .room__plus-container {
