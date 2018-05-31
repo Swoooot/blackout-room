@@ -33,6 +33,7 @@
 
 .concept__purple-section {
     background-color: #5335e3;
+    padding: 20px;
 }
 
 .concept__logos {
@@ -59,9 +60,41 @@
 }
 
 .concept__centered-logo {
-    text-align: center;
+    margin: 0 auto;
+    height: 100px;
 }
 
 .concept__centered-logo > img {
-    height: 100px;
+    height: 100%;
 }
+
+.concept__link {
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    margin: 20px 0 20px;
+}
+
+.concept__purple-header {
+    display: flex;
+    height: 50px;
+}
+
+.concept__purple-header > img {
+    height: 100%;
+}
+
+.concept__black-text {
+    color: black;
+}
+
+.concept__header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.concept__page {
+    margin-bottom: 40px;
+}
+

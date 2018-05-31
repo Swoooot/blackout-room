@@ -1519,8 +1519,7 @@ address {
 
 .footer-big {
   padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: black; }
+  padding-bottom: 40px; }
 
 .scroll-home {
   position: fixed;
@@ -1916,7 +1915,7 @@ address {
   width: 50%;
   text-align: center;
   margin-top: 0.5em;
-  margin-left: 15px; }
+  margin-left: 20px; }
 
 .room__gift-1408 {
   margin-top: -2em; }
@@ -1926,7 +1925,7 @@ address {
   vertical-align: top;
   padding: 10px 20px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Arial", Helvetica, sans-serif;
   text-decoration: none;
   color: #FFFFFF;
@@ -2057,7 +2056,8 @@ address {
   height: 200px; }
 
 .concept__purple-section {
-  background-color: #5335e3; }
+  background-color: #5335e3;
+  padding: 20px; }
 
 .concept__logos {
   display: flex;
@@ -2079,7 +2079,32 @@ address {
   font-weight: bold; }
 
 .concept__centered-logo {
-  text-align: center; }
+  margin: 0 auto;
+  height: 100px; }
 
 .concept__centered-logo > img {
-  height: 100px; }
+  height: 100%; }
+
+.concept__link {
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+  margin: 20px 0 20px; }
+
+.concept__purple-header {
+  display: flex;
+  height: 50px; }
+
+.concept__purple-header > img {
+  height: 100%; }
+
+.concept__black-text {
+  color: black; }
+
+.concept__header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.concept__page {
+  margin-bottom: 40px; }
