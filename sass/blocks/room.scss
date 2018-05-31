@@ -169,6 +169,7 @@
 
 .room__reserver {
     width: 50%;
+    margin-left: 20px;
     margin-bottom: 40px;
     margin-top: 20px;
     text-align: center;
@@ -183,7 +184,8 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color: rgba(87, 53, 191, 0.8);
+    transition: background-color 0.2s linear, color 0.2s linear;
+    background-color: #5335e3;
     cursor: pointer;
     cursor:hand;
 }
@@ -199,6 +201,8 @@
 }
 
 .room__reserver a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
 }
 
 @media(max-width: 950px) {
@@ -260,6 +264,11 @@
     .room__reserver {
         width: 100%;
         margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .room__gift {
+        margin-left: 0px !important;
     }
 }
 
@@ -389,6 +398,7 @@
       width: 50%;
       text-align: center;
       margin-top: 0.5em;
+      margin-left: 15px;
   }
 
   .room__gift-1408 {
@@ -403,13 +413,18 @@
     font-size: 20px;
     font-family: $main-text;
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    background-color: #5335e3;
     cursor: pointer;
     cursor:hand;
+}
+
+.room__gift a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
 }
 
 @media (max-width: 880px) {

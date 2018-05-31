@@ -336,7 +336,9 @@
     }
 }
 
-.rooms__plus_container {
+.rooms__plus-container {
+    width: 65%;
+    margin: 0 auto 2em;
     display: flex;
     flex: 5;
     justify-content: center;
@@ -350,9 +352,13 @@
   
   .rooms__plus img{
     height: 60px;
+    opacity: 0.6;
   }
   
   @media (max-width: 880px) {
+    .rooms__plus-container {
+        width: 100%;
+    }
     .rooms__plus {
       font-size: 11px;
     }
