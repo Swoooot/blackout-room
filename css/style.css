@@ -2049,8 +2049,17 @@ address {
   font-size: 20px; }
 
 .concept__columns {
-  column-count: 2;
-  column-gap: 20px; }
+  display: flex;
+  flex: 2; }
+
+.concept__column {
+  flex: 1; }
+
+.concept__column:first-child {
+  margin-right: 20px; }
+
+.concept__column:nth-child(2n) {
+  margin-left: 20px; }
 
 .concept__image-block {
   height: 200px; }
@@ -2073,14 +2082,20 @@ address {
   justify-content: center; }
 
 .concept__logo > img {
-  height: 100%; }
+  height: 100%;
+  filter: invert(100%); }
 
 .concept__bold {
   font-weight: bold; }
 
 .concept__centered-logo {
-  margin: 0 auto;
-  height: 100px; }
+  height: 100px;
+  text-align: center; }
+
+@media (max-width: 520px) {
+  .concept__logo {
+    height: 50px;
+    font-size: 12px; } }
 
 .concept__centered-logo > img {
   height: 100%; }
@@ -2108,3 +2123,6 @@ address {
 
 .concept__page {
   margin-bottom: 40px; }
+
+.concept__type {
+  margin-top: 20px; }
