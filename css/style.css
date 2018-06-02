@@ -2032,7 +2032,11 @@ address {
   color: white;
   font-family: Arial;
   text-align: justify;
-  margin: 15px; }
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px; }
 
 .concept__purple-text {
   color: #5335e3; }
@@ -2095,7 +2099,11 @@ address {
 @media (max-width: 520px) {
   .concept__logo {
     height: 50px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .concept__columns {
+    display: block; }
+  .concept__column {
+    margin: 10px 0 20px !important; } }
 
 .concept__centered-logo > img {
   height: 100%; }
