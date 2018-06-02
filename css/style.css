@@ -2035,7 +2035,7 @@ address {
   box-sizing: border-box;
   min-width: 320px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto 0;
   padding: 0 25px; }
 
 .concept__purple-text {
@@ -2047,7 +2047,26 @@ address {
   text-align: center;
   margin: 15px;
   margin-top: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: flex;
+  flex: 10; }
+
+.concept__title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.concept__key {
+  flex: 2;
+  height: 40px;
+  background-image: url("../img/key.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: invert(100%); }
+
+.concept__key-right {
+  transform: scaleX(-1); }
 
 .concept__subtitle {
   font-size: 20px; }
@@ -2093,7 +2112,7 @@ address {
   font-weight: bold; }
 
 .concept__centered-logo {
-  height: 100px;
+  height: 200px;
   text-align: center; }
 
 @media (max-width: 520px) {
