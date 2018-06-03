@@ -2084,8 +2084,21 @@ address {
 .concept__column:nth-child(2n) {
   margin-left: 20px; }
 
+.concept__images {
+  margin-bottom: 20px; }
+
 .concept__image-block {
-  height: 200px; }
+  text-align: center;
+  flex: 1;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.concept__image1 {
+  background-image: url("../img/concept1.jpg"); }
+
+.concept__image2 {
+  background-image: url("../img/concept2.jpg"); }
 
 .concept__purple-section {
   background-color: #5335e3;
@@ -2113,7 +2126,8 @@ address {
 
 .concept__centered-logo {
   height: 200px;
-  text-align: center; }
+  text-align: center;
+  margin-top: -20px; }
 
 @media (max-width: 520px) {
   .concept__logo {
@@ -2135,7 +2149,7 @@ address {
 
 .concept__purple-header {
   display: flex;
-  height: 50px; }
+  height: 70px; }
 
 .concept__purple-header > img {
   height: 100%; }
