@@ -1891,6 +1891,9 @@ address {
 .room__plus-container.room__plus-container-ei {
   margin-top: -135px; }
 
+.room__margin-top {
+  margin-top: -100px !important; }
+
 @media (max-width: 880px) {
   .room__plus-container {
     margin-top: 10px;
