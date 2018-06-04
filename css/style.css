@@ -1471,6 +1471,10 @@ address {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.social__lang img {
+  height: 36px;
+  width: 36px; }
+
 .footer {
   padding-top: 20px;
   padding-bottom: 20px;
