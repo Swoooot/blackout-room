@@ -1475,6 +1475,10 @@ address {
   height: 70px;
   width: 70px; }
 
+.opened__menu .social__lang img {
+  width: 90px;
+  height: 90px; }
+
 .footer {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1952,6 +1956,10 @@ address {
     margin-top: 1em;
     width: 100%;
     text-align: center; } }
+
+.room__background-pic {
+  background-image: url("../../img/chambre_pic.jpg");
+  background-size: contain; }
 
 .background-fixed__wrap {
   position: absolute;
